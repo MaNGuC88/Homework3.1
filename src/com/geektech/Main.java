@@ -8,7 +8,7 @@ public class Main {
         double positiveNumbersSum = 0;
         int positiveNumbersCount = 0;
         for (double number : numbers) {
-            if (!firstNegativeNumber && number < 0) {
+            if (number < 0) {
                 firstNegativeNumber = true;
                 continue;
             }
@@ -24,7 +24,7 @@ public class Main {
         double positiveNumbersSum2 = 0;
         int positiveNumbersCount2 = 0;
         for (int i = 0; i < numbers2.length; i++) {
-            if (!firstNegativeNumber2 && numbers2[i] < 0) {
+            if (numbers2[i] < 0) {
                 firstNegativeNumber2 = true;
                 continue;
             }
